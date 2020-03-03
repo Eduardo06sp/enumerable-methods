@@ -14,7 +14,7 @@ module Enumerable
     count = 0
 
     while count < self.length
-      yield(self[count])
+      yield(self[count], count)
       count += 1
     end
 
