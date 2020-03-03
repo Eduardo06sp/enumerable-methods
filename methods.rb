@@ -3,7 +3,7 @@ module Enumerable
     count = 0
 
     while count < self.length
-      yield
+      yield(self[count])
       count += 1
     end
   end
