@@ -9,4 +9,7 @@ module Enumerable
 
     self
   end
+
+  def my_each_with_index
+  end
 end
