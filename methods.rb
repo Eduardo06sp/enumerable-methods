@@ -22,5 +22,13 @@ module Enumerable
   end
 
   def my_select
+    count = 0
+
+    while count < self.length
+      yield(self[count])
+      count += 1
+    end
+
+    self
   end
 end
