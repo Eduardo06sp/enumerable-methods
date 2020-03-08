@@ -23,12 +23,15 @@ module Enumerable
 
   def my_select
     count = 0
+    new_array = []
 
     while count < self.length
-      yield(self[count])
+      if yield(self[count])
+        new_array.push(self[count])
+      end
       count += 1
     end
 
-    self
+    new_array
   end
 end
