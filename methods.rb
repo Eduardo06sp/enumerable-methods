@@ -34,4 +34,7 @@ module Enumerable
 
     new_array
   end
+
+  def my_all?
+  end
 end
