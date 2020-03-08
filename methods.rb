@@ -22,6 +22,5 @@ module Enumerable
   end
 
   def my_select
-    self.my_each
   end
 end
