@@ -35,7 +35,7 @@ module Enumerable
     new_array
   end
 
-  def my_all?(&block)
+  def my_all?
     count = 0
     returns_false = false
 
@@ -53,7 +53,6 @@ module Enumerable
     end
   end
 
-  def my_none?(&block)
-    my_all?(&block)
+  def my_none?
   end
 end
