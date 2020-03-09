@@ -93,12 +93,14 @@ module Enumerable
 
   def my_map
     count = 0
+    new_array = []
 
     while count < self.length
-      yield(self[count])
+      new_element = yield(self[count])
+      new_array.push(new_element)
       count += 1
     end
 
-    self
+    return new_array
   end
 end
