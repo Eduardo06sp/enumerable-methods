@@ -80,6 +80,10 @@ module Enumerable
         if yield(self[count])
           true_elements += 1
         end
+      else
+        if self[count]
+          true_elements += 1
+        end
       end
       count += 1
     end
