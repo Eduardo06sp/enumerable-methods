@@ -77,6 +77,7 @@ module Enumerable
 
     while count < self.length
       if yield(self[count])
+        true_elements += 1
       end
       count += 1
     end
