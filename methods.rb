@@ -37,6 +37,7 @@ module Enumerable
 
   def my_all?
     count = 0
+    returns_false = false
 
     while count < self.length
       yield(self[count])
