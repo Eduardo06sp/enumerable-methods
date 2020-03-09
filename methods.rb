@@ -90,4 +90,7 @@ module Enumerable
 
     return true_elements
   end
+
+  def my_map
+  end
 end
