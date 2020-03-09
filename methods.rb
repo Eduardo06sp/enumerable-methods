@@ -73,6 +73,7 @@ module Enumerable
 
   def my_count
     count = 0
+    true_elements = 0
 
     while count < self.length
       if yield(self[count])
