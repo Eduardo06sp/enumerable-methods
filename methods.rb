@@ -70,4 +70,14 @@ module Enumerable
       return true
     end
   end
+
+  def my_count
+    count = 0
+
+    while count < self.length
+      if yield(self[count])
+      end
+      count += 1
+    end
+  end
 end
