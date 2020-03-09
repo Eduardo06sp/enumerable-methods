@@ -1,5 +1,5 @@
 module Enumerable
-  def my_each
+  def my_each(&block)
     count = 0
 
     while count < self.length
@@ -35,6 +35,7 @@ module Enumerable
     new_array
   end
 
-  def my_all?
+  def my_all?(&block)
+    my_each(&block)
   end
 end
