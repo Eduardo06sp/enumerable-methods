@@ -55,16 +55,16 @@ module Enumerable
 
   def my_none?
     count = 0
-    returns_false = false
+    returns_true = false
 
     while count < self.length
-      if !(yield(self[count]))
-        returns_false = true
+      if yield(self[count])
+        returns_true = true
       end
       count += 1
     end
 
-    if returns_false
+    if returns_true
       return false
     else
       return true
