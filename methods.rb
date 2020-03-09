@@ -76,8 +76,10 @@ module Enumerable
     true_elements = 0
 
     while count < self.length
-      if yield(self[count])
-        true_elements += 1
+      if block_given?
+        if yield(self[count])
+          true_elements += 1
+        end
       end
       count += 1
     end
