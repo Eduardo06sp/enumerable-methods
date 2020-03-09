@@ -103,4 +103,7 @@ module Enumerable
 
     return new_array
   end
+
+  def my_inject
+  end
 end
