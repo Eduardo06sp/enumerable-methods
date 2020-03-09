@@ -40,8 +40,16 @@ module Enumerable
     returns_false = false
 
     while count < self.length
-      yield(self[count])
+      if !(yield(self[count]))
+        returns_false = true
+      end
       count += 1
+    end
+
+    if returns_false
+      return false
+    else
+      return true
     end
   end
 end
