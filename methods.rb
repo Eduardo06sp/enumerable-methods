@@ -52,4 +52,7 @@ module Enumerable
       return true
     end
   end
+
+  def my_none?
+  end
 end
