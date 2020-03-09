@@ -81,5 +81,7 @@ module Enumerable
       end
       count += 1
     end
+
+    return true_elements
   end
 end
