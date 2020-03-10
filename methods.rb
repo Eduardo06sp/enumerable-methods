@@ -108,8 +108,10 @@ module Enumerable
     count = 0
 
     while count < self.length
-      yield(self[count])
+      yield(sum, self[count])
       count += 1
     end
+
+    return sum
   end
 end
