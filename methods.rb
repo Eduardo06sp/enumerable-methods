@@ -115,4 +115,7 @@ module Enumerable
 
     return sum
   end
+
+  def multiply_els
+  end
 end
