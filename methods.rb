@@ -114,7 +114,7 @@ module Enumerable
       count += 1
     end
 
-    return sum
+    return result
   end
 
   def multiply_els(array)
