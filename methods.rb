@@ -116,6 +116,7 @@ module Enumerable
     return sum
   end
 
-  def multiply_els
+  def multiply_els(array)
+    values_array = array
   end
 end
