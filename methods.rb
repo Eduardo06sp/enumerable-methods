@@ -107,6 +107,7 @@ module Enumerable
   def my_inject
     count = 0
     sum = self[0]
+    result = 0
 
     while count < self.length
       yield(sum, self[count])
