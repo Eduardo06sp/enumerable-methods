@@ -91,7 +91,7 @@ module Enumerable
     return true_elements
   end
 
-  def my_map
+  def my_map(&self_multiply)
     count = 0
     new_array = []
 
