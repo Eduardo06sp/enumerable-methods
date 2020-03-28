@@ -119,6 +119,8 @@ module Enumerable
   end
 end
 
+self_multiply = Proc.new { |num| num * num }
+
 def multiply_els(array)
   array.my_inject { |result, num| result * num }
 end
