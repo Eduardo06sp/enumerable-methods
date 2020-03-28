@@ -96,7 +96,7 @@ module Enumerable
     new_array = []
 
     while count < self.length
-      new_element = yield(self[count])
+      new_element = self_multiply.call(self[count])
       new_array.push(new_element)
       count += 1
     end
