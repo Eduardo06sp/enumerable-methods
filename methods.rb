@@ -105,7 +105,7 @@ module Enumerable
   end
 
   def my_inject
-    count = 0
+    count = 1
     sum = self[0]
     result = 0
 
