@@ -91,12 +91,16 @@ module Enumerable
     return true_elements
   end
 
-  def my_map(&self_multiply)
+  def my_map(self_multiply=nil, &block)
     count = 0
     new_array = []
 
     while count < self.length
-      new_element = self_multiply.call(self[count])
+      if self_multiply
+        new_element = self_multiply.call(self[count])
+      else
+        new_element = yield(self[count])
+      end
       new_array.push(new_element)
       count += 1
     end
