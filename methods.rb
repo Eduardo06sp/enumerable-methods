@@ -111,6 +111,7 @@ module Enumerable
 
     while count < self.length
       result += yield(sum, self[count])
+      sum = result
       count += 1
     end
 
