@@ -120,6 +120,5 @@ module Enumerable
 end
 
 def multiply_els(array)
-  values_array = array
   array.my_inject { |result, num| result * num }
 end
